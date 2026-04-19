@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Servers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/961f5bb8e9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Minecraft Server Bookmarks</h1>
+        </div>
+
+        <div class="creator">
+            <div class="server_name">
+                <label for="name">Server Name</label>
+                <input id="name" class="name" placeholder="Enter Server Name" required>
+            </div>
+            <div class="server_ip">
+                <label for="ip">IP Address</label>
+                <input id="ip" class="ip" placeholder="Enter Server IP" required>
+            </div>
+            <button class="add" onclick="addServer()">Add Server</button>
+        </div>
+
+        <div class="servers">
+        </div>
+
+ 
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>

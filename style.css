@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Source Serif 4", monospace;
+    height: 100vh;
+    width: 100%;
+    font-family: ;
+    position: absolute;
+
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+        background-image: url(media/mc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.creator {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.616);
+    padding: 16px;
+    border-radius: 24px;
+    backdrop-filter: blur(2px);
+}
+.server_name {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    align-items: center;
+}
+.server_ip{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+
+}
+.name, .ip {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: rgba(240, 248, 255, 0.247);
+    backdrop-filter: blur(4px);
+    border: 1px solid grey;
+    
+}
+.name:focus, .ip:focus {
+    outline: none;
+}
+.add {
+    padding: 8px 12px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-size: 18px;
+    backdrop-filter: blur(4px);
+    background: rgba(240, 248, 255, 0.247);
+        transition: all 0.3s ease;
+
+
+}
+.add:hover {
+        background: rgba(240, 248, 255, 0.384);
+
+}
+.add:active {
+            background: rgba(240, 248, 255, 0.486);
+            transform: scale(0.98);
+
+}
+.servers {
+    height: 133px;
+    width: 350px;
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px 12px;
+    border: 1px solid grey;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.server {
+    height: fit-content;
+    padding: 4px 8px;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(88, 88, 88, 0.39);
+}
+.ipbtn {
+    border: none;
+    border-radius: 100%;
+    font-size: 18px;
+    padding: 2px;
+    backdrop-filter: blur(4px);
+    background: rgba(240, 248, 255, 0.247);
+    transition: all 0.3s ease;
+
+}
+.ipbtn:hover {
+    background: rgba(240, 248, 255, 0.541);
+
+}
+.ipbtn:active {
+    scale: 0.9;
+}
+.toast {
+    display: none;
+    position: fixed;
+    padding: 8px 12px;
+    top: 10px;
+    right: 20px;
+    width: fit-content;
+    z-index: 9999;
+    color: black;
+    background-color: rgba(199, 26, 26, 0.26);
+    border-radius: 16px;
+}
+@keyframes toastRight{
+    from{
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
